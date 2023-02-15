@@ -1,0 +1,50 @@
+/* .falling {
+  animation-name: falling;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}*/
+
+@keyframes falling {
+  0% {
+    transform: translate(0, -300%);
+  }
+
+  100% {
+    transform: translate(0, 300%);
+  }
+}
+
+.bouncing {
+  animation-name: bouncing;
+  animation-duration: 1.4s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bouncing {
+  0% {
+    transform: translate(0, -135%);
+  }
+  100% {
+    transform: translate(0, 140%);
+  }
+}
+
+.drop {
+  animation-name: drop;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes drop {
+  0% {
+    transform: translate(0, -300%);
+  }
+  100% {
+    transform: translate(0, 140%);
+  }
+}
